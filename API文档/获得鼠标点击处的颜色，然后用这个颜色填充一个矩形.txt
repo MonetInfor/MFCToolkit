@@ -1,0 +1,22 @@
+//获得鼠标点击处的颜色，然后用这个颜色填充一个矩形
+void CPtClrDlg::OnLButtonDown(UINT nFlags, CPoint point) 
+{
+	//获得设备场景
+	CDC* pDC = GetDC();
+
+	//获得指定点的颜色
+	COLORREF clr = pDC->GetPixel(point);
+
+	//创建画刷
+	CBrush brush;
+	brush.CreateSolidBrush(clr);
+
+	//用刚才获得的颜色填充矩形区域
+	CRect rc(170,50,270,150);
+	pDC->FillRect(&rc,&brush);
+
+	//释放设备场景
+	ReleaseDC(pDC);
+
+	CDialog::OnLButtonDown(nFlags, point);
+}

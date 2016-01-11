@@ -1,0 +1,150 @@
+本文主要介绍了VC++/MFC中如下内容的剪贴板操作：
+1、文本内容的操作
+2、WMF数据的操作
+3、位图的操作
+4、设置使用自定义格式
+5、感知剪贴板内容的改变
+6、自动将数据粘贴到另一应用程序窗口
+一、文本内容的操作
+下面的代码示范了如何将文本内容复制到剪贴板(Unicode编码的先转化为ASCII)：
+CString source;
+//文本内容保存在source变量中
+if( OpenClipboard() )
+{
+ HGLOBAL clipbuffer;
+ char * buffer;
+ EmptyClipboard();
+ clipbuffer = GlobalAlloc(GMEM_DDESHARE, source.GetLength()+1);
+ buffer = (char*)GlobalLock(clipbuffer);
+ strcpy(buffer, LPCSTR(source));
+ GlobalUnlock(clipbuffer);
+ SetClipboardData(CF_TEXT,clipbuffer);
+ CloseClipboard();
+}
+下面的代码显示了如何从剪贴板上获得文本内容：
+char * buffer = NULL;
+//打开剪贴板
+CString fromClipboard;
+if ( OpenClipboard() )
+{
+ HANDLE hData = GetClipboardData(CF_TEXT);
+ char * buffer = (char*)GlobalLock(hData);
+ fromClipboard = buffer;
+ GlobalUnlock(hData);
+ CloseClipboard();
+}
+二、WMF数据的操作
+　　在剪贴板上读写图象数据是非常有用的功能，并且实现起来也很简单。下面的代码显示了如何将扩展图元文件复制到剪贴板：
+  if(OpenClipboard());
+{
+ EmptyClipboard();
+ //创建图元文件DC
+ CMetaFileDC * cDC = new CMetaFileDC();
+ cDC->CreateEnhanced(GetDC(),NULL,NULL,"the_name");
+ //调用绘图例程
+ //关闭CMetafileDC并获得它的句柄
+ HENHMETAFILE handle = cDC->CloseEnhanced();
+ //复制到剪贴板
+ SetClipBoardData(CF_ENHMETAFILE,handle);
+ CloseClipboard();
+ //删除dc
+ delete cDC;
+}
+下面的代码演示了从剪贴板获得图元文件并将其绘制到client DC上：
+if(OpenClipboard())
+{
+ //获得剪贴板数据
+ HENMETAFILE handle = (HENMETAFILE)GetClipboardData(CF_ENHMETAFILE);
+ //显示
+ CClientDC dc(this);
+ CRect client(0,0,200,200);
+ dc.PlayMetaFile(handle,client);
+ //关闭剪贴板
+ CloseClipboard();
+}
+三、位图的操作
+
+位图的操作稍微复杂一点，下面这个例子显示了如何在剪贴板保存位图：
+if(OpenClipboard())
+{
+ EmptyClipboard();
+ CBitmap * junk = new CBitmap();
+ CClientDC cdc(this);
+ CDC dc;
+ dc.CreateCompatibleDC(&cdc);
+ CRect client(0,0,200,200);
+ junk->CreateCompatibleBitmap(&cdc,client.Width(),client.Height());
+ dc.SelectObject(junk);
+ DrawImage(&dc,CString("Bitmap"));
+ //复制数据到剪贴板
+ SetClipboardData(CF_BITMAP,junk->m_hObject);
+ CloseClipboard();
+ delete junk;
+}
+下面的代码显示了如何从剪贴板上获得位图数据：
+if(OpenClipboard())
+{
+ //获得剪贴板数据
+ HBITMAP handle = (HBITMAP)GetClipboardData(CF_BITMAP);
+ CBitmap * bm = CBitmap::FromHandle(handle);
+ CClientDC cdc(this);
+ CDC dc;
+ dc.CreateCompatibleDC(&cdc);
+ dc.SelectObject(bm);
+ cdc.BitBlt(0,0,200,200,&dc,0,0,SRCCOPY);
+ CloseClipboard();
+}
+四、设置并使用自定义格式
+使用RegisterClipboardFormat()函数，可以复制和粘贴任何你需要的数据类型。比如我们有以下一个数据类型：
+struct MyFormatData
+{
+ long val1;
+ int val2;
+};
+我们要把它复制到剪贴板，可以使用如下的代码：
+UINT format = RegisterClipBoardFormat("MY_CUSTOM_FORMAT");
+if(OpenClipboard())
+{
+ MyFormatData data;
+ data.val1 = 100;
+ data.val2 = 200;
+ HGLOBAL clipbuffer;
+ EmptyClipboard();
+ clipbuffer = GlobalAlloc(GMEM_DDESHARE, sizeof(MyFormatData));
+ MyFormatData * buffer = (MyFormatData*)GlobalLock(clipbuffer);
+ //保存到内存
+ *buffer = data;
+ //保存到剪贴板
+ GlobalUnlock(clipbuffer);
+ SetClipboardData(format,clipbuffer);
+ CloseClipboard();
+}
+读取数据使用以下代码：
+UINT format = RegisterClipboardFormat("MY_CUSTOM_FORMAT");
+MyFormatData data;
+if(Openclipboard())
+{
+ HANDLE hData =GetClipboardData(format);
+ MyFormatData * buffer = (MyFormatData*)GlobalLock(hData);
+ data = *buffer;
+ GlobalUnlock(hData);
+ CloseClipboard();
+}
+五、感知剪贴板内容的改变
+通过Windows消息可以感知剪贴板内容是否发生改变，代码如下：
+//In your initialization code call:
+SetClipboardViewer(); //将我们的程序添加到剪贴板观察链
+//In your message map add:
+ON_MESSAGE(WM_DRAWCLIPBOARD, OnClipChange) //添加Message handle
+//Which is declared as:
+afx_msg void OnClipChange();
+Finally implement:
+void CDetectClipboardChangeDlg::OnClipChange() 
+{
+ CTime time = CTime::GetCurrentTime();
+ SetDlgItemText(IDC_CHANGED_DATE,time.Format("%a, %b %d, %Y -- %H:%M:%S"));
+ DisplayClipboardText();
+}
+六、自动将数据粘贴到另一应用程序窗口
+只需获得相应窗口的句柄，并发送一个消息就可以了：
+SendMessage(m_hTextWnd, WM_PASTE, 0, 0);

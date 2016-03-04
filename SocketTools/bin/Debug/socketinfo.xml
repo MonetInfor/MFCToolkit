@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ArrayOfSocketInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />  <SocketInfo>
+    <Name>客户端1</Name>
+    <Type>Client</Type>
+    <Format>AscII</Format>
+    <ServerIp>127.0.0.1</ServerIp>
+    <Port>8890</Port>
+    <Protocol>Tcp</Protocol>
+    <Data>请录入测试数据</Data>
+    <IsAuto>false</IsAuto>
+  </SocketInfo>
+  <SocketInfo>
+    <Name>服务器端1</Name>
+    <Type>Server</Type>
+    <Format>AscII</Format>
+    <ServerIp>127.0.0.1</ServerIp>
+    <Port>8890</Port>
+    <Protocol>Tcp</Protocol>
+    <Data>请录入测试数据</Data>
+    <IsAuto>false</IsAuto>
+  </SocketInfo>
+</ArrayOfSocketInfo>>cketInfo>

@@ -1,0 +1,28 @@
+F:\My DBank\新建文件夹\SocketTool\obj\Release\ResolveAssemblyReference.cache
+F:\My DBank\新建文件夹\SocketTool\obj\Release\SocketTool.Form1.resources
+F:\My DBank\新建文件夹\SocketTool\obj\Release\SocketTool.Properties.Resources.resources
+F:\My DBank\新建文件夹\SocketTool\obj\Release\SocketTool.csproj.GenerateResource.Cache
+F:\My DBank\LtCommunication\SocketTool\bin\Release\SocketTool.exe.config
+F:\My DBank\LtCommunication\SocketTool\bin\Release\SocketTool.exe
+F:\My DBank\LtCommunication\SocketTool\bin\Release\SocketTool.pdb
+F:\My DBank\LtCommunication\SocketTool\bin\Release\log4net.dll
+F:\My DBank\LtCommunication\SocketTool\obj\Release\ResolveAssemblyReference.cache
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.MainForm.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.ClientForm.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.Properties.Resources.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.ServerForm.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.csproj.GenerateResource.Cache
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.exe
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.pdb
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\bin\Release\SocketTool.exe.config
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Release\SocketTool.exe
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Release\SocketTool.pdb
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\bin\Release\SocketTool.exe
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\bin\Release\SocketTool.pdb
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\bin\Release\log4net.dll
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Release\ResolveAssemblyReference.cache
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Release\SocketTool.MainForm.resources
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Release\SocketTool.ClientForm.resources
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Release\SocketTool.Properties.Resources.resources
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Release\SocketTool.ServerForm.resources
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Release\SocketTool.csproj.GenerateResource.Cache

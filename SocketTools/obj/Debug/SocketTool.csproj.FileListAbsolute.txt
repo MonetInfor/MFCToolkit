@@ -1,0 +1,56 @@
+E:\My DBank\SocketTool\obj\Debug\ResolveAssemblyReference.cache
+E:\My DBank\SocketTool\obj\Debug\SocketTool.Properties.Resources.resources
+E:\My DBank\SocketTool\bin\Debug\SocketTool.exe
+E:\My DBank\SocketTool\bin\Debug\SocketTool.pdb
+E:\My DBank\SocketTool\bin\Debug\Castle.Core.dll
+E:\My DBank\SocketTool\bin\Debug\Castle.DynamicProxy.dll
+E:\My DBank\SocketTool\bin\Debug\Castle.DynamicProxy2.dll
+E:\My DBank\SocketTool\bin\Debug\Common.Logging.dll
+E:\My DBank\SocketTool\bin\Debug\Common.Logging.Log4Net.dll
+E:\My DBank\SocketTool\bin\Debug\Iesi.Collections.dll
+E:\My DBank\SocketTool\bin\Debug\log4net.dll
+E:\My DBank\SocketTool\obj\Debug\SocketTool.exe
+E:\My DBank\SocketTool\obj\Debug\SocketTool.pdb
+E:\My DBank\SocketTool\bin\Debug\SocketTool.exe.config
+E:\My DBank\SocketTool\obj\Debug\SocketTool.MainForm.resources
+E:\My DBank\SocketTool\obj\Debug\SocketTool.ClientForm.resources
+E:\My DBank\SocketTool\obj\Debug\SocketTool.ServerForm.resources
+F:\My DBank\LtCommunication\SocketTool\bin\Debug\SocketTool.exe.config
+F:\My DBank\LtCommunication\SocketTool\obj\Debug\SocketTool.exe
+F:\My DBank\LtCommunication\SocketTool\obj\Debug\SocketTool.pdb
+F:\My DBank\LtCommunication\SocketTool\obj\Debug\ResolveAssemblyReference.cache
+F:\My DBank\LtCommunication\SocketTool\obj\Debug\SocketTool.MainForm.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Debug\SocketTool.ClientForm.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Debug\SocketTool.Properties.Resources.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Debug\SocketTool.ServerForm.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Debug\SocketTool.csproj.GenerateResource.Cache
+F:\My DBank\LtCommunication\SocketTool\bin\Debug\SocketTool.exe
+F:\My DBank\LtCommunication\SocketTool\bin\Debug\SocketTool.pdb
+F:\My DBank\LtCommunication\SocketTool\bin\Debug\log4net.dll
+E:\My DBank\SocketTool\obj\Debug\SocketTool.csproj.GenerateResource.Cache
+F:\My DBank\LtCommunication\SocketTool\bin\Debug\log4net.pdb
+F:\My DBank\LtCommunication\SocketTool\bin\Debug\log4net.xml
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\bin\Debug\SocketTool.exe.config
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Debug\SocketTool.exe
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Debug\SocketTool.pdb
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\bin\Debug\SocketTool.exe
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\bin\Debug\SocketTool.pdb
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\bin\Debug\log4net.dll
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Debug\ResolveAssemblyReference.cache
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Debug\SocketTool.MainForm.resources
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Debug\SocketTool.ClientForm.resources
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Debug\SocketTool.Properties.Resources.resources
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Debug\SocketTool.ServerForm.resources
+E:\项目\wwb调试\审核后台源码\SocketToolsourcecode_9a975ce6-1413-481b-bcac-cd950d221225\SocketTool\obj\Debug\SocketTool.csproj.GenerateResource.Cache
+C:\Users\AlexWin10\Downloads\SocketTools\bin\Debug\SocketTool.exe.config
+C:\Users\AlexWin10\Downloads\SocketTools\obj\Debug\SocketTool.exe
+C:\Users\AlexWin10\Downloads\SocketTools\obj\Debug\SocketTool.pdb
+C:\Users\AlexWin10\Downloads\SocketTools\bin\Debug\SocketTool.exe
+C:\Users\AlexWin10\Downloads\SocketTools\bin\Debug\SocketTool.pdb
+C:\Users\AlexWin10\Downloads\SocketTools\bin\Debug\log4net.dll
+C:\Users\AlexWin10\Downloads\SocketTools\obj\Debug\SocketTool.csprojResolveAssemblyReference.cache
+C:\Users\AlexWin10\Downloads\SocketTools\obj\Debug\SocketTool.MainForm.resources
+C:\Users\AlexWin10\Downloads\SocketTools\obj\Debug\SocketTool.ClientForm.resources
+C:\Users\AlexWin10\Downloads\SocketTools\obj\Debug\SocketTool.Properties.Resources.resources
+C:\Users\AlexWin10\Downloads\SocketTools\obj\Debug\SocketTool.ServerForm.resources
+C:\Users\AlexWin10\Downloads\SocketTools\obj\Debug\SocketTool.csproj.GenerateResource.Cache
